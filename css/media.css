@@ -1,0 +1,99 @@
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  .container-list {
+    height: -webkit-calc(100vh - 165px);
+    height: calc(100vh - 165px);
+    height-padding-bottom: 65px;
+  }
+  .container-list::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+    background: transparent;
+  }
+  .dragons-list {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+  }
+  .dragons-list::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+    background: transparent;
+  }
+  .dragons-list li {
+    width: 18%;
+  }
+  .dragonStatusBox {
+    font-size: 13px;
+    bottom: 35%;
+  }
+}
+
+@media only screen and (min-height: 414px) and (orientation: landscape) and (max-width: 991px) {
+  .dragons-list li {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-height: 360px) and (orientation: landscape) and (max-width: 731px) {
+  .dragons-list li {
+    width: 21.6%;
+  }
+}
+
+@media only screen and (min-height: 360px) and (orientation: landscape) and (max-width: 560px) {
+  .dragons-list li {
+    width: 23.6%;
+  }
+}
+
+@media only screen and (max-width: 991px) and (orientation: portrait) {
+  .dragons-list {
+    height: auto;
+  }
+  .dragons-list li {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    margin-bottom: 20px;
+  }
+  .title, .filter {
+    -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .main__block-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__block-content {
+    padding: 0 10px;
+  }
+  .container-list {
+    height: -webkit-calc(100vh - 220px);
+    height: calc(100vh - 220px);
+  }
+}
